@@ -11,6 +11,7 @@ $(document).ready(function() {
         $('#fav').text("Favorite");
         $('#fav').css({"background-color": "lightpink"});
     }
+    $('#fav').css({"display": "inline-block"});
     $('#s').text(c);
 });
 

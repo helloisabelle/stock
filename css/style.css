@@ -39,6 +39,10 @@ body{
     background-color: lightpink;
 }
 
+#button{
+    display: none;
+}
+
 #search{
     margin: 4%;
 }
