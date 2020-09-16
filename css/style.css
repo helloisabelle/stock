@@ -1,0 +1,109 @@
+@font-face{
+  font-family: "renner";
+  src: url("renner.ttf");
+}
+
+body{
+    font-family: "renner";
+    margin: 0;
+    width: 100%;
+    background-color: #f2f2ff;
+}
+
+#home{
+    color: #242424;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+#header{
+    text-shadow: 4px 4px white;
+}
+
+#header h1{
+   font-size: 80px;
+}
+
+#con{
+    margin: auto;
+    width: 50%;
+}
+
+#fav{
+    text-align: center;
+    background-color: lightpink;
+}
+
+#search{
+    margin: 4%;
+}
+
+.search-input{
+    margin: auto;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+input[type="text"].search-input{
+    width: 50%;
+}
+
+input[type="text"].search-input::placeholder{
+    font-size: 23px;
+    color: #d9d9d9;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.navbar{
+  background-color: #242424;
+}
+
+.navbar-brand{
+  font-size: 40px;
+  padding-left: 10px;
+  color: white;
+}
+
+.navbar-brand:hover{
+  color: #f2f2ff;
+}
+
+.block{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 5px;
+	padding: 20px;
+	margin: 1%;
+}
+
+/* responsiveness for home page */
+@media (max-width: 992px){
+   input[type="submit"].search-input{
+       width: 15%;
+   }
+}
+
+@media (max-width: 768px){
+   input[type="submit"].search-input{
+       width: 20%;
+   }
+
+   input[type="text"].search-input::placeholder{
+       font-size: 20px;
+   }
+
+   #checkboxes{
+       font-size: 13px;
+   }
+}
