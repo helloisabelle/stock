@@ -31,6 +31,7 @@ body{
 #con{
     margin: auto;
     width: 50%;
+    text-align: center;
 }
 
 #fav{
@@ -79,9 +80,7 @@ input[type="text"].search-input::placeholder{
 }
 
 .block{
-    display:flex;
-    flex-direction: column;
-    text-align: left;
+    background-color: 'lightPurple';
     border-radius: 5px;
 	padding: 20px;
 	margin: 1%;
@@ -101,9 +100,5 @@ input[type="text"].search-input::placeholder{
 
    input[type="text"].search-input::placeholder{
        font-size: 20px;
-   }
-
-   #checkboxes{
-       font-size: 13px;
    }
 }

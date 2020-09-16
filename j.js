@@ -4,7 +4,8 @@ $(document).ready(function() {
     var h = new Date(time).getHours();
     var min = new Date(time).getMinutes();
     if (d.getDay() >= 6 || (h < 9 || h > 16) || (h == 9 && min < 30) || (h == 4 && min > 0)){
-        $("#meetings").css({"display": "none"});
+        $("#content").css({"display": "none"});
+        $("#sub").text("We're closed!");
     }
 });
 
@@ -18,7 +19,7 @@ function filter() {
     });
 }
 
-function md(name){
+function redir(name){
   window.location.href = 'results.html?name=' + name;
   $('#s').text(name);
 };
