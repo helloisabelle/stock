@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
     // initial state
     if (sessionStorage.getItem(c)){

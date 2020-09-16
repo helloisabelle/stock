@@ -8,6 +8,16 @@ $(document).ready(function() {
     }
 });
 
+function filter() {
+    $('#list').children('li').each(function () {
+        if (!this.innerText.toUpperCase() .startsWith($('#input').val().toUpperCase())){
+            this.style.display = "none";
+        } else {
+            this.style.display = "list-item";
+        }
+    });
+}
+
 function md(name){
   window.location.href = 'results.html?name=' + name;
   $('#s').text(name);

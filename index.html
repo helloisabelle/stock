@@ -19,8 +19,9 @@
 
 			<div id="content">
 				<div id = "search">
-					<input class="form-control search-input" name="query" type="text" placeholder="Search stocks">
+					<input class="form-control search-input" name="query" id="input" type="text" onkeyup="filter()" placeholder="Search stocks">
 				</div>
+				<ul id="list">
 				<li onmousedown="md('MOMO')">MOMO</li>
 				<li onmousedown="md('TPL')">TPL</li>
 				<li onmousedown="md('MU')">MU</li>
@@ -31,6 +32,7 @@
 				<li onmousedown="md('NXST')">NXST</li>
 				<li onmousedown="md('TRTN')">TRTN</li>
 				<li onmousedown="md('SSNC')">SSNC</li>
+				</ul>
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
